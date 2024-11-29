@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from 'react-intersection-observer';
 import { useLanguage } from "../context/LanguageContext";
+import profilePhoto from "../assets/images/profile2.jpg";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -88,7 +89,7 @@ const About = () => {
           <div className="order-1 md:order-2 md:max-w-[280px]">
             <img
               className="object-cover p-1 lg:p-2 w-full aspect-square rounded-2xl ring-2 ring-white/20"
-              src="src/assets/images/profile2.jpg"
+              src={profilePhoto}
               alt="Profile"
             />
           </div>

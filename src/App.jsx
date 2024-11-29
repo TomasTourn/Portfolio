@@ -5,7 +5,9 @@ import Skills from './components/Skills'
 import About from './components/About'
 import Footer from './components/Footer'
 import { LanguageProvider, useLanguage } from './context/LanguageContext'
-
+import gameHubImg from './assets/images/gamehub2.png'
+import numberBlocksImg from './assets/images/numberblocks1080.png'
+import connect4Img from './assets/images/connect4.png'
 
 
 function App() {
@@ -81,20 +83,20 @@ function MainApp() {
 
         <Skills></Skills>
 
-        <Card image="src/assets/images/gamehub2.png"
+        <Card image={gameHubImg}
             title={currentTranslations.card1.title}
             description={currentTranslations.card1.description}
             technologies={technologiesGeneral}
             link="https://tomastourn.github.io/interfaces-grupo-47/TP4/EntregaFinal/"
             presentation={currentTranslations.card1.bigTitle}></Card>
 
-        <Card image="src/assets/images/numberblocks1080.png"
+        <Card image={numberBlocksImg}
             title={currentTranslations.card2.title}
             description={currentTranslations.card2.description}
             technologies={technologiesGeneral}
             link="https://tomastourn.github.io/interfaces-grupo-47/TP4/EntregaFinal/NumberBlocks/"></Card>
 
-        <Card image="src/assets/images/connect4.png"
+        <Card image={connect4Img}
             title={currentTranslations.card3.title}
             description={currentTranslations.card3.description}
             technologies={technologiesConnect4}
