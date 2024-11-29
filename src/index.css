@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+  --gris:#242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --background:#E8E8E8;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gunterz';
+  src: url('/fonts/Gunterz-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gunterz-Bold';
+  src: url('/fonts/Gunterz-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gunterz-Regular';
+  src: url('/fonts/Gunterz-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+a{
+  
+  padding: 10px;
+
+}
+
+body{
+  @apply font-sans
+}
+.card-container{
+  transition: transform 0.3s ease;
+}
+.card-container:hover{
+  transform: scale(1.05);
+}
+span{
+  color:rgb(239, 68, 68);
+  font-weight: bold;
+}
+
+html{
+  scroll-behavior: smooth;
+}
