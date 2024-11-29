@@ -1,11 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import Home from './components/Home'
-import Nav from './components/Nav'
 import Card from './components/Card'
 import Skills from './components/Skills'
 import About from './components/About'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import { LanguageProvider, useLanguage } from './context/LanguageContext'
 
 
@@ -103,7 +101,7 @@ function MainApp() {
             link="https://tomastourn.github.io/interfaces-grupo-47/TP4/EntregaFinal/game.html"></Card>
           
         <About></About>
-        
+
         <Footer></Footer>
 
     </>
