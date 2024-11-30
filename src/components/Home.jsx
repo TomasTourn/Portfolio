@@ -29,6 +29,17 @@ const Home = () => {
 
       const t = content[language];
 
+
+      const handleDownload = () => {
+            const resumeFile = language==='en' ? '/resume-tomas-tourn.pdf' : '/cv-tomas-tourn.pdf';
+            const link = document.createElement('a');
+            link.href=resumeFile;
+            link.download=resumeFile.split('/').pop();
+            link.click();
+            console.log(language)
+      }
+
+
     return (
         <section className="font-gunterz text-center ">
             <LanguageButton />
@@ -64,9 +75,9 @@ const Home = () => {
                     title="E-mail"
                 />
                 <Button
-                    href="/resume"
                     svg={resumeSvg}
                     title={t.resume}
+                    onClick={handleDownload}
                 />
             </div>
         </section>
